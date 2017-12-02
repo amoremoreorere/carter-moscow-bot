@@ -2,7 +2,8 @@ import telebot
 import requests
 from telebot import types
 
-TOKEN = '443038853:AAGkWWhT0toBHvyniNc0VAShL1ZNBhbSRYU'
+token = os.environ['TELEGRAM_TOKEN']
+some_api_token = os.environ['SOME_API_TOKEN']
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
