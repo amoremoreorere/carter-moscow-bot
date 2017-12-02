@@ -2,7 +2,7 @@ import telebot
 import requests
 from telebot import types
 
-bot = telepot.Bot(os.environ.get('TOKEN_VARIABLE'))
+TOKEN = os.environ['TOKEN']
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -12,6 +12,5 @@ def start(message):
 def start(message):
     sent = bot.send_message(message.chat.id, message.from_user.first_name + ', я помогу тебе здесь разобраться. Вот команды, которые я знаю: \n \start - чтобы начать выбор одежды  \n/zakaz - чтобы сделать заказ \n/dostavka - узнать о доставке \n/history - узнать историю бренда Картерс \n/size_chart - определить размер одежды малыша')
 
- 
 if __name__ == '__main__':
     bot.polling(none_stop=True)
