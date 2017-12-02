@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
+
 import requests  
 import datetime
 
-TOKEN = '443038853:AAGkWWhT0toBHvyniNc0VAShL1ZNBhbSRYU'
 url = "https://api.telegram.org/bot443038853:AAGkWWhT0toBHvyniNc0VAShL1ZNBhbSRYU/"
  
 class BotHandler:
