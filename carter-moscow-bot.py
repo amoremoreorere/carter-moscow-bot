@@ -2,8 +2,6 @@
 import telebot
 import requests
 from telebot import types
-import logging
-import os
 
 TOKEN = '443038853:AAGkWWhT0toBHvyniNc0VAShL1ZNBhbSRYU'
 bot = telebot.TeleBot(TOKEN)
