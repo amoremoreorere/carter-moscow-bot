@@ -2,8 +2,6 @@
 import telebot
 import requests
 from telebot import types
-from telegram.ext import Updater
-from telegram.ext import CommandHandler
 import logging
 import os
 
