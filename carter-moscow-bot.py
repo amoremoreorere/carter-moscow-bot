@@ -13,9 +13,6 @@ def start(message):
 def start(message):
     sent = bot.send_message(message.chat.id, message.from_user.first_name + ', я помогу тебе здесь разобраться. Вот команды, которые я знаю: \n \start - чтобы начать выбор одежды  \n/zakaz - чтобы сделать заказ \n/dostavka - узнать о доставке \n/history - узнать историю бренда Картерс \n/size_chart - определить размер одежды малыша')
 
-port = int(os.environ.get("PORT", 5000))
-app.run(debug=True, host='0.0.0.0', port=port)  
-
-    
+ 
 if __name__ == '__main__':
     bot.polling(none_stop=True)
