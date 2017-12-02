@@ -1,1 +1,1 @@
-web: gunicorn gettingstarted.wsgi --log-file -
+web: python carter-moscow-bot.py runserver 0.0.0.0:5000
